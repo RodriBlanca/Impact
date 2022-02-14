@@ -7,7 +7,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // CSS
 import './index.css';
 
-
 ReactDOM.render(
   <Router>
     <Impact />

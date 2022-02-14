@@ -1,0 +1,14 @@
+@media screen and (min-width: 270px) {
+  .header {
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 1px 3px 4px #eeeeee;
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  }
+}
