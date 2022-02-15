@@ -1,4 +1,9 @@
 import React from 'react';
+// Components
+import Brand from '../Brand/Brand';
+import NavBar from '../NavBar/NavBar';
+import Cart from '../Cart/Cart';
+import User from '../User/User';
 // CSS
 import './header.css';
 

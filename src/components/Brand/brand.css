@@ -1,0 +1,9 @@
+@media screen and (min-width: 270px) {
+  .brand {
+    color: #f55000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    margin: 0 0 0 15px;
+    text-decoration: none;
+  }
+}
