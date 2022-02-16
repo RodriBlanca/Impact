@@ -35,7 +35,7 @@
   }
 
   .user-toggle:checked ~ .user-container {
-    height: 500px;
+    height: 400px;
     visibility: visible;
   }
 
@@ -219,9 +219,5 @@
 
   .user-container {
     align-items: center;
-  }
-
-  .user-toggle:checked ~ .user-container {
-    height: 500px;
   }
 }

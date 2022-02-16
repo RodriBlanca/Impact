@@ -1,0 +1,25 @@
+@media screen and (min-width: 270px) {
+  .checkout-item {
+    border: 1px solid #eeeeee;
+    display: flex;
+    height: 100px;
+    /* margin-bottom: 10px; */
+    margin: 0 15px 10px 15px;
+    overflow: hidden;
+  }
+
+  .checkItem-img {
+    height: 100%;
+    width: 100px;
+  }
+
+  .checkItem-img__pic {
+    width: 100%;
+  }
+
+  .checkItem-info__name,
+  .checkItem-info__price,
+  .checkItem-info__amount {
+    margin: 5px 0 10px 10px;
+  }
+}

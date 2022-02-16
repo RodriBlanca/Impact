@@ -6,6 +6,9 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 // Pages
 import Home from './pages/Home';
+import Register from './pages/Register';
+import Checkout from './pages/Checkout';
+import Category from './pages/Category';
 // Contexts
 import { ProductProvider } from './contexts/ProductContext';
 import { CartProvider } from './contexts/CartContext';
@@ -26,6 +29,11 @@ const Impact = () => {
                   <Header />
                   <Routes>
                       <Route path="/Impact-ecommerce" element={<Home />} />
+                      <Route path="/register" element={<Register />}/>
+                      <Route path="/checkout" element={<Checkout />}/>
+                      <Route path="/item:id" element={<ItemDetailContainer />}/>
+                      <Route path="category:id" element={<Category props={menData} title={listItemTitle}/>}/>
+                      <Route path="category:id/item:id" element={<ItemDetailContainer />}/>
                   </Routes>
                   <Footer />
                 </CheckboxesProvider>

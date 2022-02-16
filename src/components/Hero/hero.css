@@ -1,0 +1,51 @@
+.hero-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 270px) {
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero-text {
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-text {
+    font-size: 2.5rem;
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    font-size: 3.6rem;
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-size: 4.5rem;
+    margin-left: 110px;
+    margin-top: 110px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-text {
+    font-size: 6rem;
+    margin-left: 150px;
+    margin-top: 150px;
+  }
+}

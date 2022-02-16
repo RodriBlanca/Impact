@@ -10,7 +10,7 @@
   }
 
   .toggle:checked ~ .cart-container {
-    height: 400px;
+    height: 100vh;
     visibility: visible;
   }
 
@@ -130,8 +130,12 @@
     justify-content: space-between;
     left: 0px;
     position: absolute;
-    top: 48px;
+    top: 50px;
     width: 100%;
+  }
+
+  .toggle:checked ~ .cart-container {
+    height: 400px;
   }
 
   .cart {

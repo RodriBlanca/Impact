@@ -1,0 +1,156 @@
+@media screen and (min-width: 270px) {
+  .checkout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    min-height: 80vh;
+  }
+
+  .checkout-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+
+  .checkout-text {
+    font-size: 1.3rem;
+    margin: 0 15px;
+  }
+
+  .checkout-form {
+    width: 100%;
+  }
+
+  .checkout-form__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+
+  .checkout-form__input {
+    border: none;
+    border-bottom: 1px solid #888888;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    height: 30px;
+    margin: 15px 0;
+  }
+
+  .checkout-button__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .checkout-form__button {
+    background-color: #000000;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Ubuntu", serif;
+    font-size: 1.2rem;
+    height: 45px;
+    margin: 15px 15px;
+    transition: all 0.3s ease;
+    width: 250px;
+  }
+
+  .checkout-form__products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .checkout-form__title {
+    margin: 10px 15px;
+  }
+
+  .checkout-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .message {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: 10px 15px;
+    width: 100%;
+  }
+
+  .message > p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    padding: 25px 50px;
+  }
+
+  .error {
+    border: 2px solid #ff1a1a;
+    background-color: #ffe2e2;
+    color: #ff1a1a;
+  }
+
+  .success {
+    border: 2px solid #11eb7e;
+    background-color: #d5ffea;
+    color: #11eb7e;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .checkout-form {
+    width: 600px;
+  }
+
+  .checkout-form__button {
+    width: 300px;
+  }
+
+  .checkout-form__button:hover {
+    background-color: #f55000;
+  }
+
+  .checkout-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .message {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 400px;
+  }
+
+  .message > p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    padding: 25px 50px;
+  }
+
+  .error {
+    border: 2px solid #ff1a1a;
+    background-color: #ffe2e2;
+    color: #ff1a1a;
+  }
+
+  .success {
+    border: 2px solid #11eb7e;
+    background-color: #d5ffea;
+    color: #11eb7e;
+  }
+
+  .checkout-form__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}

@@ -1,14 +1,66 @@
 @media screen and (min-width: 270px) {
   .footer {
+    align-items: center;
+    background-color: #323232;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
     grid-column: 1/2;
     grid-row: 3/4;
-    background-color: #424242;
+    width: 100%;
+  }
+
+  .footer-title {
+    color: #f55000;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .footer-information {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-information__item {
+    color: #888888;
+    cursor: pointer;
+  }
+
+  .footer-information__title {
+    font-size: 1.2rem;
+  }
+
+  .footer-information__item:hover {
+    color: #ffffff;
+  }
+
+  .footer-information > ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 5px;
+    padding: 0;
+    width: 100px;
   }
 }
 
 @media screen and (min-width: 700px) {
   .footer {
     grid-column: 1/10;
+  }
+
+  .footer-information > ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 150px;
   }
 }
 

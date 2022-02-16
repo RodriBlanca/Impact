@@ -6,7 +6,7 @@ import './brand.css';
 
 const Brand = () => {
   return (
-    <h1><Link to="/Impact-App" className='brand'>Impact</Link></h1>
+    <h1 className='brand'><Link to="/Impact-App" className='brand-link'>Impact</Link></h1>
   )
 }
 
