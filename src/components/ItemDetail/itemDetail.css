@@ -1,0 +1,197 @@
+@media screen and (min-width: 270px) {
+  .detail {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .detail-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .detail-button__add {
+    background-color: #000000;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    height: 45px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    width: 250px;
+  }
+
+  .detail-info__price {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .detail-amount {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    justify-content: center;
+    margin-right: 20px;
+    width: 60px;
+  }
+
+  .detail-amount__text {
+    margin: 5px 0;
+  }
+
+  .detail-amount__increment {
+    transform: rotateX(180deg);
+  }
+
+  .detail-amount__increment,
+  .detail-amount__decrement {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+  }
+
+  .detail-info__title,
+  .detail-info__brand,
+  .detail-info__genre,
+  .detail-info__color,
+  .detail-info__price {
+    margin-left: 15px;
+  }
+
+  .detail-info__brand,
+  .detail-info__genre,
+  .detail-info__color {
+    font-size: 1.2rem;
+  }
+
+  .detail-info__title {
+    font-size: 1.5rem;
+  }
+
+  .detail-description {
+    margin: 0 15px;
+    min-height: 100px;
+    text-align: justify;
+  }
+
+  .detail-description__title {
+    font-size: 1.1rem;
+  }
+
+  .buttons-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .detail {
+    box-shadow: 3px 5px 5px 1px #888888;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    margin: 25px 25px;
+    overflow: hidden;
+    width: 900px;
+  }
+
+  .detail-sup {
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 25px 0 25px;
+    padding-bottom: 25px;
+  }
+
+  .detail-img {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    width: 600px;
+    overflow: hidden;
+  }
+
+  .detail-img__pic {
+    height: auto;
+    width: 100%;
+  }
+
+  @supports (object-fit: cover) {
+    .detail-img img {
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .detail-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-start;
+    margin: 0 0 0 25px;
+    width: 300px;
+  }
+
+  .detail-info__title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .detail-button {
+    position: relative;
+    top: 90px;
+    width: 100%;
+  }
+
+  .detail-button__add {
+    width: 300px;
+  }
+
+  .detail-button__add:hover {
+    background-color: #f55000;
+  }
+
+  .detail-amount {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+    width: 60px;
+  }
+
+  .detail-description {
+    margin: 0 25px;
+    min-height: 100px;
+  }
+
+  .detail-description__title {
+    font-size: 1.2rem;
+  }
+
+  .detail-info__brand,
+  .detail-info__genre,
+  .detail-info__color {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .detail-info__title {
+    display: -webkit-box;
+    font-size: 1.7rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}
