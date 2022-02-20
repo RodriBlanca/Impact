@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // React-router-dom
 import { Routes, Route } from 'react-router-dom';
 // Components
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 // Pages
 import Home from './pages/Home';
 import Register from './pages/Register';
@@ -15,10 +16,45 @@ import { CartProvider } from './contexts/CartContext';
 import { CategoryIdProvider } from './contexts/CategoryIdContext';
 import { TotalProvider } from './contexts/TotalContext';
 import { CheckboxesProvider } from './contexts/CheckboxesContext';
+// Firebase 
+import { db } from '../../firebase/firebaseConfig';
+import { collection, query, getDocs } from "firebase/firestore";
 // CSS
 import './index.css';
 
 const Impact = () => {
+
+  const [productsData, setProductsData] = useState([]);
+  const [menData, setMenData] = useState([]);
+  const [products] = useReducer(cartReducer, []);
+  const [listItemTitle, setListItemTitle] = useState('Top Sellers');
+
+  useEffect(() => {
+      const getProducts = async() => {
+          const q = query(collection(db, "products"));
+          const docs = [];
+          const querySnapshot = await getDocs(q);
+          querySnapshot.forEach((doc) => {
+              docs.push({...doc.data(), id: doc.id});
+          });
+          setProductsData(docs);
+      };
+      getProducts();
+  }, []);
+
+  useEffect(() => {
+      const getMenProducts = async() => {
+          const q = query(collection(db, "men"));
+          const docs = [];
+          const querySnapshot = await getDocs(q);
+          querySnapshot.forEach((doc) => {
+              docs.push({...doc.data(), id: doc.id});
+          });
+          setMenData(docs);
+      };
+      getMenProducts();
+  }, []);
+
   return (
     <div className='impact'>
         <ProductProvider>
@@ -26,9 +62,9 @@ const Impact = () => {
             <CategoryIdProvider>
               <TotalProvider>
                 <CheckboxesProvider>
-                  <Header />
+                  <Header products={products} title={listItemTitle} setTitle={setListItemTitle} />
                   <Routes>
-                      <Route path="/Impact-ecommerce" element={<Home />} />
+                      <Route path="/Impact-ecommerce" element={<Home props={productsData} title={listItemTitle} setTitle={setListItemTitle} />} />
                       <Route path="/register" element={<Register />}/>
                       <Route path="/checkout" element={<Checkout />}/>
                       <Route path="/item:id" element={<ItemDetailContainer />}/>
