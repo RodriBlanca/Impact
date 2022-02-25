@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Impact-ecommerce/static/css/main.a548920f.css",
-    "main.js": "/Impact-ecommerce/static/js/main.e30cdd22.js",
+    "main.css": "/Impact-ecommerce/static/css/main.e30fe95d.css",
+    "main.js": "/Impact-ecommerce/static/js/main.d03f2eb0.js",
     "static/media/buying.jpg": "/Impact-ecommerce/static/media/buying.bc139603a090bf17b972.jpg",
+    "static/media/banner.jpg": "/Impact-ecommerce/static/media/banner.a0fa7d77395db27011e4.jpg",
     "static/media/group.jpg": "/Impact-ecommerce/static/media/group.2c644e6d83e7844f0d19.jpg",
     "static/media/user-e-commerce.png": "/Impact-ecommerce/static/media/user-e-commerce.05d0404ad8a0ab5bdefa.png",
     "index.html": "/Impact-ecommerce/index.html",
-    "main.a548920f.css.map": "/Impact-ecommerce/static/css/main.a548920f.css.map",
-    "main.e30cdd22.js.map": "/Impact-ecommerce/static/js/main.e30cdd22.js.map"
+    "main.e30fe95d.css.map": "/Impact-ecommerce/static/css/main.e30fe95d.css.map",
+    "main.d03f2eb0.js.map": "/Impact-ecommerce/static/js/main.d03f2eb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.a548920f.css",
-    "static/js/main.e30cdd22.js"
+    "static/css/main.e30fe95d.css",
+    "static/js/main.d03f2eb0.js"
   ]
 }
