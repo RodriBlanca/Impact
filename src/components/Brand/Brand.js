@@ -22,7 +22,7 @@ const Brand = ({ setTitle }) => {
 
   return (
     <h1 className='brand' onClick={toHome} onMouseEnter={handleChangeTitle}>
-      <Link to="/Impact-App" className='brand-link'>Impact</Link>
+      <Link to="/Impact" className='brand-link'>Impact</Link>
     </h1>
   )
 }
