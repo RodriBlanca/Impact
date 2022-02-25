@@ -39,13 +39,13 @@ const NavBar = ({setTitle}) => {
         <nav className='nav'>
             <ul className='nav-list'>
                 <li>
-                    <Link className="nav-list__item" to={'/category:women'} onClick={toWomen} onMouseEnter={handleChangeTitle} >Women</Link>
+                    <Link className="nav-list__item" to={'/Impact/category:women'} onClick={toWomen} onMouseEnter={handleChangeTitle} >Women</Link>
                 </li>
                 <li>
-                    <Link className="nav-list__item" to={'/category:men'} onClick={toMen} onMouseEnter={handleChangeTitle} >Men</Link>
+                    <Link className="nav-list__item" to={'/Impact/category:men'} onClick={toMen} onMouseEnter={handleChangeTitle} >Men</Link>
                 </li>
                 <li>
-                    <Link className="nav-list__item" to={'/category:kids'} onClick={toKids} onMouseEnter={handleChangeTitle} >Kids</Link>
+                    <Link className="nav-list__item" to={'/Impact/category:kids'} onClick={toKids} onMouseEnter={handleChangeTitle} >Kids</Link>
                 </li>
             </ul>
         </nav>
