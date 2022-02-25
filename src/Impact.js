@@ -66,7 +66,7 @@ const Impact = () => {
                 <CheckboxesProvider>
                   <Header products={products} title={listItemTitle} setTitle={setListItemTitle} />
                   <Routes>
-                      <Route path="/Impact-ecommerce" element={<Home props={productsData} title={listItemTitle} setTitle={setListItemTitle} />} />
+                      <Route path="/Impact" element={<Home props={productsData} title={listItemTitle} setTitle={setListItemTitle} />} />
                       <Route path="/register" element={<Register />}/>
                       <Route path="/checkout" element={<Checkout />}/>
                       <Route path="/item:id" element={<ItemDetailContainer />}/>
