@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Impact-ecommerce/static/css/main.e30fe95d.css",
-    "main.js": "/Impact-ecommerce/static/js/main.d03f2eb0.js",
-    "static/media/buying.jpg": "/Impact-ecommerce/static/media/buying.bc139603a090bf17b972.jpg",
-    "static/media/banner.jpg": "/Impact-ecommerce/static/media/banner.a0fa7d77395db27011e4.jpg",
-    "static/media/group.jpg": "/Impact-ecommerce/static/media/group.2c644e6d83e7844f0d19.jpg",
-    "static/media/user-e-commerce.png": "/Impact-ecommerce/static/media/user-e-commerce.05d0404ad8a0ab5bdefa.png",
-    "index.html": "/Impact-ecommerce/index.html",
-    "main.e30fe95d.css.map": "/Impact-ecommerce/static/css/main.e30fe95d.css.map",
-    "main.d03f2eb0.js.map": "/Impact-ecommerce/static/js/main.d03f2eb0.js.map"
+    "main.css": "/Impact/static/css/main.e30fe95d.css",
+    "main.js": "/Impact/static/js/main.c357e719.js",
+    "static/media/buying.jpg": "/Impact/static/media/buying.bc139603a090bf17b972.jpg",
+    "static/media/banner.jpg": "/Impact/static/media/banner.a0fa7d77395db27011e4.jpg",
+    "static/media/group.jpg": "/Impact/static/media/group.2c644e6d83e7844f0d19.jpg",
+    "static/media/user-e-commerce.png": "/Impact/static/media/user-e-commerce.05d0404ad8a0ab5bdefa.png",
+    "index.html": "/Impact/index.html",
+    "main.e30fe95d.css.map": "/Impact/static/css/main.e30fe95d.css.map",
+    "main.c357e719.js.map": "/Impact/static/js/main.c357e719.js.map"
   },
   "entrypoints": [
     "static/css/main.e30fe95d.css",
-    "static/js/main.d03f2eb0.js"
+    "static/js/main.c357e719.js"
   ]
 }
