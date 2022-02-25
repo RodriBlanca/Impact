@@ -4,14 +4,14 @@ import './listItem.css';
 import Item from '../Item/Item';
 
 const ListItem = ({props, title}) => {
-    const [categoryId] = useContext(CategoryId);
+    const [CategoryId] = useContext(CategoryIdContext);
     props.forEach(elem => {
         if(elem.collection !== 'top-products') {
-            if(categoryId === 'women' || categoryId === 'men' || categoryId === 'kids') {
-                if(categoryId === 'women') {
+            if(CategoryId === 'women' || CategoryId === 'men' || CategoryId === 'kids') {
+                if(CategoryId === 'women') {
                     const womanProducts = props.filter(prop => prop.gender === 'women')
                     props = womanProducts;
-                } else if (categoryId=== 'men') {
+                } else if (CategoryId === 'men') {
                     const menProducts = props.filter(prop => prop.gender === 'men');
                     props = menProducts;
                 } else {
