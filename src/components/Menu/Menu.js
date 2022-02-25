@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { CategoryId } from '../../contexts/CategoryId';
+import { CategoryIdContext } from '../../contexts/CategoryIdContext';
 import { Link } from 'react-router-dom';
 import './menu.css';
 
 const Menu = ({setTitle}) => {
 
-    const [ , setCategoryId] = useContext(CategoryId);
+    const [ , setCategoryId] = useContext(CategoryIdContext);
     let newTitle;
 
     const toMen = () => {

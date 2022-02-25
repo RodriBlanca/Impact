@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useReducer } from 'react';
 // React-router-dom
 import { Routes, Route } from 'react-router-dom';
 // Components
@@ -16,8 +16,10 @@ import { CartProvider } from './contexts/CartContext';
 import { CategoryIdProvider } from './contexts/CategoryIdContext';
 import { TotalProvider } from './contexts/TotalContext';
 import { CheckboxesProvider } from './contexts/CheckboxesContext';
+// Reducers
+import { cartReducer } from './reducers/cartReducer';
 // Firebase 
-import { db } from '../../firebase/firebaseConfig';
+import { db } from './firebase/firebaseConfig';
 import { collection, query, getDocs } from "firebase/firestore";
 // CSS
 import './index.css';

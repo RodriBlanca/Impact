@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
-import arrow from '../../assets/img/arrow-down-sign-to-navigate.png';
+import arrow from '../../images/arrow-down-sign-to-navigate.png';
 import { CartContext } from '../../contexts/CartContext';
 import { useCounter } from '../../hooks/useCounter';
 import './itemDetail.css';
