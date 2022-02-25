@@ -70,8 +70,8 @@ const Impact = () => {
                       <Route path="/register" element={<Register />}/>
                       <Route path="/checkout" element={<Checkout />}/>
                       <Route path="/item:id" element={<ItemDetailContainer />}/>
-                      <Route path="category:id" element={<Category props={menData} title={listItemTitle}/>}/>
-                      <Route path="category:id/item:id" element={<ItemDetailContainer />}/>
+                      <Route path="/Impact/category:id" element={<Category props={menData} title={listItemTitle}/>}/>
+                      <Route path="/Impact/category:id/item:id" element={<ItemDetailContainer />}/>
                   </Routes>
                   <Footer />
                 </CheckboxesProvider>
